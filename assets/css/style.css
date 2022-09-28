@@ -1,0 +1,146 @@
+/*Variaveisa e Componentes*/
+:root{
+    --azul: #167BF7;
+    --azul-efeito: #77aef1;
+    --branco: #FFFFFF;
+    --cinza: #C0C0C0;
+    --preto: #00030C;
+    --fonte: 'Inter';
+}
+
+body{
+    background-color: var(--preto);
+    font-family: var(--fonte), sans-serif;
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn{
+    background-color: var(--azul);
+    border: none;
+    border-radius: 8px;
+    color: var(--branco);
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.btn--primary{
+    background-color: transparent;
+    border: 2px solid var(--cinza);
+}
+.container{
+    padding: 1.5rem;
+}
+.titulo{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+
+/*Seção Banner*/
+.banner{
+    background-image: url("../img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+.banner__conteudo{
+    margin: 0 6em;
+}
+.banner__titulo{
+    font-size: 28px;
+}
+.banner__imagem{
+    margin: 1em 0 2em 0;
+}
+.banner__texto{
+    color: var(--cinza);
+    font-size: 12px;
+}
+
+
+/*Seção Descrição*/
+.descricao{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    align-items: center;
+    margin: 0 10em;
+}
+.descricao__conteudo{
+    padding: 2em;
+}
+.descricao__imagem{
+    width: 80%;
+}
+.descricao__titulo{
+    margin-bottom: 0.1em;
+}
+.descricao__texto{
+    color: var(--cinza);
+}
+.descricao__botao{
+    margin-top: 1em;
+    display: inline-block;
+}
+
+
+/*Seção Dispositivos*/
+.dispositivos__titulo{
+    text-align: center;
+    margin-top: 5em;
+}
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    margin: 5em 0;
+
+}
+.dispositivos__item{
+    text-align: center;
+    font-size: 32px;
+}
+
+
+/*Seção Footer*/
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+}
+.rodape__logo{
+    margin-bottom: 2em;
+}
+.rodape__lista{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+.rodape__link{
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 16px;
+}
+.rodape__texto{
+    font-size: 14px;
+    color: var(--cinza);
+    margin-bottom: 2em;
+}
+
+/*Estilização Efeitos*/
+.btn:hover{
+    background-color: var(--azul-efeito);
+    color: var(--preto);
+}
+.rodape__link:hover{
+    color: var(--azul);
+}
+.rodape__link:hover{
+    color: purple;
+}
